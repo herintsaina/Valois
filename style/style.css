@@ -177,7 +177,7 @@ header {
 /************ BANNER ************/
 
 .banner {
-    background-image: url("../images/AdobeStock_285717388_Preview.png");
+    background-image: url(".../images/AdobeStock_285717388_Preview.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
@@ -278,7 +278,7 @@ header {
     padding-top: 400px;
     justify-content: space-between;
     font-family: "Bahnschrift";
-    background-image: url("../images/Image31.png");
+    background-image: url(".../images/Image31.png");
     position: relative;
     background-size: cover;
     width: 100%;
