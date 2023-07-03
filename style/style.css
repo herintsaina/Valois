@@ -1,0 +1,2341 @@
+
+body {
+    margin: 0;
+}
+
+/*************** dropdown en CSS************/
+
+.offcanvas{
+    display: none;
+}
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn img{
+    width: 80px;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eef1f6;;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #525e78;
+    z-index: 1;
+    font-size: 25px;
+    font-family:"Bahnschrift";
+}
+
+.dropdown-content a {
+    color: #525e78;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/******************* deuxieme Teste   ****************/
+
+.slid_menu{
+    width: 350px;
+    display: contents;
+}
+
+.slid_menu img{
+    width: 100px;
+}
+
+.list_slid ul li:hover  {
+    background: #525e78 ;
+    color: #ffffff;
+}
+
+.list_slid ul li a{
+    color: #ffffff ;
+    font-size: 33px;
+}
+
+.list_slid ul li{
+    background: #55617b ;
+}
+
+.list_slid{
+    background: #55617b;
+}
+
+
+/**********************/
+
+header {
+    background: #eef1f6;
+    width: 100%;
+}
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.navbar .logo-Valois {
+    height: 60px;
+}
+
+.navbar .icon-serveur {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu li {
+    margin: 20px;
+    list-style: none;
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Bahnschrift";
+    font-weight: bold;
+    color: #394c6d;
+}
+
+.icon-serveur .icon {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-serveur .serveur {
+    display: flex;
+    align-items: center;
+    width: 45px;
+}
+
+.serveur:nth-child(2) {
+    margin: 10px 10px;
+    width: 35px;
+}
+
+/**********DESCRIPTION **************/
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #394c6d;
+    font-size: 13px;
+}
+
+.description .contact {
+    padding: 0px 15px 0px 5px;
+    color: white;
+}
+
+.contact i {
+    padding: 10px 9px 10px;
+}
+
+.description span {
+    font-family: sans-serif;
+}
+
+.description a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.description a:nth-child(2) {
+    background: #f4b937;
+}
+
+/************ BANNER ************/
+
+.banner {
+    background-image: url("../images/AdobeStock_285717388_Preview.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    background-position: center;
+    position: relative;
+}
+
+.banner:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #525e78;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.banner .renseigner {
+    padding-top: 130px;
+    color: white;
+    font-family: "Bahnschrift";
+    position: relative;
+    z-index: 1;
+}
+
+.renseigner button {
+    margin-right: 20px;
+}
+
+.banner .outils {
+    padding: 60px 0px;
+    height: 300px;
+    justify-content: space-between;
+
+}
+
+.outils .block {
+    width: 30%;
+    background-color: #f1f1f1;
+    padding: 50px;
+    margin-top: 75px;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    color: #525e78;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.block:hover {
+    bottom: 60px;
+    background-color: #f9be3c;
+    color: #525e78;
+    transition: all .5s ease;
+    animation: spin 1s;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.block:hover .links {
+    color: #525e78;
+}
+
+.block .links {
+    font-weight: bold;
+    font-family: "Bahnschrift";
+}
+
+.outils .block img {
+    max-width: 120px;
+    height: auto;
+    width: auto;
+}
+
+
+.block a {
+    color: #f9be3c;
+    text-decoration: none;
+}
+
+/************** HISTOIRS **********/
+
+.histoir {
+    padding-top: 400px;
+    justify-content: space-between;
+    font-family: "Bahnschrift";
+    background-image: url("../images/Image31.png");
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    color: #ffffff;
+}
+
+.story-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.histoir .story-items {
+    height: 400px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+.story-items a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.story-items p {
+    max-width: 900px;
+    margin: auto;
+}
+
+.story-items .description1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 210px;
+}
+
+
+/*.story-items .button{*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+
+.story-items a:hover {
+    color: #ffffff;
+}
+
+.histoir:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #394967;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/********* EVOLUTIONS ****************/
+
+
+
+.service .title .titrate {
+    color: #2c4156;
+    margin: 40px
+}
+
+
+.title {
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+
+/*.title img{*/
+/*    width: 40px ;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin: 35px;*/
+/*}*/
+
+
+.clean {
+    margin-bottom: 200px;
+}
+
+.clean .rapport {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: inherit;
+}
+
+.clean .reverse {
+    flex-direction: row-reverse;
+    margin-top: 70px;
+}
+
+.clean .reverse .evolution {
+    transform: translate(15px, 15px);
+}
+
+
+.rapport .revolution {
+    background: #fdc346;
+    width: 40%;
+    font-size: 13px;
+    padding: 30px;
+    color: #ffffff;
+    transform: translate(80px, 170px);
+}
+
+.rapport .picture {
+    position: relative;
+    transform: translate(170px , -80px);
+    width: 100%;
+    height: 12px;
+}
+
+.picture img {
+    transform: translate(-20px, -87px);
+    height: 50px;
+}
+
+
+.work {
+    width: 80%;
+    margin: 0;
+}
+
+
+.work img {
+    width: 100%;
+}
+
+
+.reverse .picture {
+    transform: translate(235px, 0px);
+}
+
+.reverse .revolution {
+    transform: translate(-80px, 170px);
+}
+
+/****** TEMOINNAGES**************/
+
+.temoinnage {
+    background: #eef1f6;
+    width: 100%;
+    padding: 50px;
+    color: #2c4156;
+    font-family: "Bahnschrift";
+    font-size: 15px;
+}
+
+.opinion {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+/*.temoinnage .title h1:before{*/
+/*    content: "NOS TEMOINAGEGES";*/
+/*    font-size: 13px;*/
+/*    position: relative;*/
+/*    bottom: 90px;*/
+/*    left: 310px;*/
+/*    opacity: 0.5;*/
+/*}*/
+
+/*.temoinnage .title h1:after{*/
+/*    content: "Temoinages";*/
+/*    font-size: 60px;*/
+/*    position: relative;*/
+/*    bottom: -15px;*/
+/*    left: -350px;*/
+/*    opacity: 0.2;*/
+/*}*/
+/*.temoinnage .title h1 {*/
+/*    margin: 30px -105px 30px 5px;*/
+/*    color: #435873;*/
+/*}*/
+
+.opinion .profil img {
+    height: 153px;
+}
+
+.opinion .expression {
+    width: 50%;
+}
+
+.expression a {
+    text-decoration: none;
+    color: #2c4156;
+}
+
+.expression a i {
+    color: #0a53be;
+}
+
+.temoinnage .titre {
+    text-align: center;
+}
+
+.temoinnage .titre .acceuil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.acceuil .proof {
+    opacity: 0.5;
+    padding-top: 20px;
+}
+
+.titre .titrate {
+    margin-bottom: 40px;
+}
+
+
+.temoinnage .select {
+    display: flex;
+    justify-content: center;
+}
+
+/*************Barre jaune *********/
+
+.temoinnage .barre {
+    display: flex;
+    justify-content: center;
+    margin: 50px -5px;
+}
+
+/************* footer ********/
+
+footer {
+    background: #394c6d;
+    width: 100%;
+    padding-top: 50px;
+    font-family: Bahnschrift;
+    color: #eef1f6;
+    height: 375px;
+}
+
+footer .pages {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.pages .icons-serveur .icons {
+    height: 45px;
+}
+
+.pages .icons-serveur .iconS {
+    height: 33px;
+}
+
+.pages .icons-serveur .iconS:nth-child(1) {
+    margin-right: 5px;
+}
+
+
+footer .pages i {
+    padding-right: 10px;
+}
+
+footer .pages i:nth-child(2) {
+    height: 20px;
+}
+
+footer .pages h6 {
+    margin-bottom: 30px;
+}
+
+footer .pages figure:nth-child(1) {
+    margin-bottom: 44px;
+}
+
+
+footer .pages:nth-child(4) {
+    width: 31%;
+}
+
+footer .pages:nth-child(2) {
+    width: 19%;
+}
+
+footer .pages:nth-child(1) {
+    margin-top: -10px;
+
+}
+
+footer .pages .reacceuil {
+    background: #ecbc58;
+    width: 25%;
+    height: 50%;
+    position: relative;
+    top: 45px;
+    left: 280px;
+    transition: all .5s ease;
+    bottom: 0;
+}
+
+footer .pages .reacceuil:hover {
+    bottom: 70px;
+    background-color: #f9be3c;
+    color: #525e78;
+    transition: all .5s ease;
+    animation: spin 1s;
+    cursor: pointer;
+}
+
+.reacceuil a img {
+    position: relative;
+    top: 30px;
+    left: 27px;
+    height: 35px;
+}
+
+/*************** RESPONSIVE ******************/
+
+/***************** MOBILE ********************/
+
+@media screen and (max-width: 340px){
+
+
+
+    .description {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .icon-serveur {
+        display: none;
+    }
+
+    .slid_menu img {
+        width: 50px;
+    }
+
+    .navbar .logo-Valois {
+        height: 45px;
+    }
+
+    .banner .renseigner {
+        padding-top: 40px;
+    }
+
+    .renseigner button {
+        width: 100%;
+        margin: -40px 0px;
+    }
+
+    .banner{
+        height: 100%;
+    }
+
+    .banner .outils{
+        height: 100%;
+    }
+
+    .outils .block {
+        width: 100%;
+    }
+
+    .outils .block img{
+        width: 70px;
+    }
+
+    .outils .block p{
+        font-size: 13px;
+    }
+
+    .block .links {
+        font-size: 13px;
+    }
+
+    .histoir {
+        padding-top: 65px;
+    }
+
+    .story-items .description1 {
+        display: grid;
+        text-align: left;
+        font-size: 13px;
+        margin: 30px 0px;
+    }
+
+    .story-items p {
+        max-width: 320px;
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .button .click button{
+        width: 100%;
+        margin-left: 0px!important;
+    }
+
+    .button .click{
+        margin: 20px;
+    }
+
+    .histoir .story-items {
+        height: 100%;
+    }
+
+    .service .title .titrate {
+        margin: 25px 0px;
+    }
+
+    .acceuil .proof {
+        font-size: 13px;
+    }
+
+    .rapport .picture {
+        display: none;
+    }
+
+    .rapport .revolution {
+        transform: translate(0px, 0px);
+        width: 100%;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .clean {
+        margin-bottom: 50px;
+    }
+
+    .clean .reverse {
+         margin-top: 0px;
+    }
+    .clean .rapport {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .opinion {
+        flex-direction: column;
+    }
+
+    .opinion .expression {
+        width: 100%;
+    }
+
+    .temoinnage {
+        padding: 0px;
+    }
+
+    .temoinnage .select {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    footer .pages:nth-child(1) {
+        width: 100%;
+    }
+
+    footer .pages:nth-child(2) {
+        width: 100%;
+    }
+
+    footer .pages:nth-child(3) {
+        width: 100%;
+    }
+
+    footer .pages a {
+        width: 30%;
+    }
+
+    footer .pages:nth-child(4) {
+        width: 100%;
+    }
+
+    footer .pages .reacceuil {
+        top: -50px;
+        left: 160px;
+    }
+
+    .reacceuil a img {
+        top: 20px;
+        left: 20px;
+    }
+
+    .outils .block .imgs {
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs1 {
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs2 {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 480px) and (min-width: 340px){
+
+    .list_slid {
+        /*height: 30px;*/
+    }
+
+    .offcanvas-header .btn-close {
+        margin-right: 0.5rem!important;
+    }
+
+    .reacceuil a img {
+        height: 25px;
+    }
+
+    .list_slid ul li a {
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .dropt-menu{
+        width: 100% !important;
+        font-size: 15px;
+    }
+
+    .slid_menu img{
+        width: 60px;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .navbar {
+        padding: 10px !important;
+    }
+
+    .navbar .menu {
+        display: none ;
+    }
+
+    .navbar .icon-serveur {
+        display: none ;
+    }
+
+    .navbar .logo-Valois {
+        height: 50px;
+    }
+
+    .banner .renseigner .big-title{
+        font-size: 2em;
+    }
+
+    .banner .renseigner .p-after{
+        font-size: 20px;
+    }
+
+    .dropbtn img {
+        width: 80px;
+    }
+
+    .banner .renseigner {
+        padding: 45px 30px;
+    }
+
+    .banner .renseigner .button {
+        font-size: 13px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .outils .block{
+        width: 100%;
+        padding: 35px;
+    }
+
+    .banner {
+        height: 100%
+    }
+
+    .banner .outils {
+        height: 100%;
+        padding: 50px;
+    }
+
+    .outils .block h2{
+        font-size: 20px;
+    }
+    .outils .block p{
+        font-size: 13px;
+        overflow: hidden;
+        height: 138px;
+    }
+
+    .outils .block img {
+        width: 45%;
+    }
+
+    .histoir{
+        height: 100%;
+        padding: 60px;
+    }
+
+    .story-items h2{
+        font-size: 25px;
+    }
+
+    .story-items p {
+        font-size: 15px;
+        padding-top: 30px;
+    }
+
+    .story-items .description1 {
+        display: flex;
+        font-size: 14px;
+        text-align: left;
+        margin: 30px 0px;
+
+
+    }
+
+    .histoir .story-items{
+        height: 100%;
+    }
+
+    .story-items .button .click button{
+        font-size: 13px;
+        width: 100%;
+        margin:5px 0px 10px 0px !important;
+    }
+
+    .story-items .button{
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    .service{
+        padding: 20px;
+    }
+
+    .acceuil .proof {
+       font-size: 15px;
+    }
+
+    .navbar .icon-serveur {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .banner{
+        height: 100%;
+    }
+
+    .histoir .story-items {
+        margin-top: 0px;
+    }
+
+    .description1{
+        flex-direction: column;
+    }
+
+
+    .service .container {
+        max-width: 575px ;
+    }
+
+    .rapport .revolution {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .rapport .revolution .evolution h3{
+        font-size: 30px;
+    }
+
+    .pages .icons-serveur .icons {
+        height: 50px;
+    }
+
+    .pages .icons-serveur .iconS {
+        height: 35px;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .work img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .rapport .revolution {
+        transform: translate(0px, 0px);
+    }
+
+    .clean .rapport {
+        flex-direction: column-reverse;
+    }
+
+
+
+    .reacceuil a img {
+        top: 20px;
+        left: 24px;
+    }
+
+    .titrate h2{
+        font-size: 33px !important;
+    }
+
+    .opinion .profil img {
+        max-width: 125px;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .temoinnage .opinion {
+        font-size: 15px;
+        width: 90%;
+        margin-top: 30px;
+        display: block;
+    }
+
+    .opinion .expression {
+        width: 100%;
+    }
+
+    .opinion .expression img{
+        width: 50px;
+    }
+
+    .temoinnage .barre img{
+        width: 90px;
+    }
+
+    .temoinnage .select button{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    footer .pages:nth-child(2) {
+        width: 100%;
+    }
+
+    footer .pages {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    footer .pages h6 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    footer .pages:nth-child(4) {
+        width: 100%;
+    }
+
+    footer .pages .reacceuil {
+        height: 55%;
+        top: -65px;
+        left: 240px;
+        width: 18%;
+    }
+
+    footer .container .pied-page{
+        padding: 0px 40px;
+    }
+
+    .reverse .picture {
+         transform: translate(0px, 0px);
+    }
+
+    .clean .reverse {
+         margin-top: 0px;
+    }
+
+    .service .clean {
+         margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .icons-serveurs .iconS {
+        width: 13%;
+        padding-left: 10px;
+    }
+
+
+    .icons-serveurs .icon {
+        width: 14%;
+        height: 100%;
+    }
+
+    .icons-serveurs{
+        padding: 50px 0px;
+    }
+
+    .rapport .picture{
+        display: none;
+    }
+
+    .block .links {
+        font-size: 13px;
+    }
+
+    .outils .block .imgs {
+        margin-bottom: 15px;
+        width: 60px;
+    }
+
+    .outils .block .imgs1 {
+        margin-bottom: 15px;
+        width: 55px;
+    }
+
+    .outils .block .imgs2 {
+        margin-bottom: 15px;
+    }
+}
+
+/****************** TABLETTE ************/
+
+@media screen and (max-width: 560px) and (min-width: 480px) {
+
+    .description {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .icon-serveur .serveur{
+        display: none;
+    }
+
+    .slid_menu img {
+        width: 60px;
+    }
+
+    .navbar .logo-Valois {
+        height: 45px;
+    }
+
+    .navbar {
+        padding: 20px 10px;
+    }
+
+    .banner{
+        height: 100%;
+    }
+
+    .banner .outils {
+        height: 100%;
+        margin: 0px 10px;
+    }
+
+    .outils .block{
+        width: 100%;
+        margin-top: 95px;
+    }
+
+    .banner .renseigner {
+        padding-top: 70px;
+    }
+
+    .histoir {
+        padding-top: 30px;
+        height: 100%;
+    }
+
+    .histoir .story-items {
+        height: 100%;
+    }
+
+    .story-items .description1 {
+        display: flex;
+        margin: 30px 60px;
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
+    .story-items .button {
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+
+    .title .titrate h2{
+        font-size: 35px;
+    }
+
+    .revolution .picture{
+        display: none;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .clean {
+        margin-bottom: 60px;
+    }
+
+    .clean .rapport {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .clean .reverse {
+         margin-top: 0px;
+    }
+
+    .rapport .revolution {
+        width: 100%;
+         transform: translate(0px, 0px);
+    }
+
+    .temoinnage {
+        padding: 20px 0px;
+    }
+
+    .opinion {
+        margin: 25px 0px;
+    }
+
+    footer{
+        height: 100%;
+    }
+
+    footer .pages:nth-child(2) {
+        width: 100%;
+    }
+
+    footer .pages:nth-child(4) {
+        width: 100%;
+    }
+
+    footer .pages .reacceuil {
+         width: 16%;
+        top: -55px;
+        left: 260px;
+        height: 60%;
+    }
+
+    .reacceuil a img {
+        top: 25px;
+        left: 25px;
+        height: 30px;
+    }
+
+    .outils .block .imgs {
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs1 {
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 770px) and (min-width: 550px) {
+
+    .description {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .icon-serveur .serveur{
+        display: none;
+    }
+
+    .slid_menu img {
+        width: 60px;
+    }
+
+    .navbar .logo-Valois {
+        height: 45px;
+    }
+
+    .navbar {
+        padding: 20px 10px;
+    }
+
+    .banner{
+        height: 100%;
+    }
+
+    .banner .outils {
+        height: 100%;
+        margin: 0px 10px;
+    }
+
+    .outils .block{
+        width: 100%;
+        margin-top: 95px;
+        font-size: 13px;
+    }
+
+    .banner .renseigner {
+        padding-top: 70px;
+    }
+
+    .histoir {
+        padding-top: 30px;
+        height: 100%;
+    }
+
+    .histoir .story-items {
+        height: 100%;
+    }
+
+    .story-items .description1 {
+        display: flex;
+        margin: 30px 60px;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .story-items .button {
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+
+    .title .titrate h2{
+        font-size: 35px;
+    }
+
+    .revolution .picture{
+        display: none;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .clean {
+        margin-bottom: 60px;
+    }
+
+    .clean .rapport {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .clean .reverse {
+         margin-top: 0px;
+    }
+
+    .rapport .revolution {
+        width: 100%;
+         transform: translate(0px, 0px);
+    }
+
+    .temoinnage {
+        padding: 20px 0px;
+    }
+
+    .opinion {
+        margin: 25px 0px;
+    }
+
+    footer{
+        height: 100%;
+    }
+
+    footer .pages:nth-child(1) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(2) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(3) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(4) {
+        width: 50%;
+    }
+
+    footer .pages .reacceuil {
+        width: 32%;
+        top: -55px;
+        left: 160px;
+        height: 55%;
+    }
+
+
+    .reacceuil a img {
+        top: 30px;
+        left: 27px;
+        height: 35px;
+    }
+
+    .outils .block .imgs {
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs1 {
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 780px) and (min-width: 770px) {
+
+
+    .description {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .icon-serveur .serveur{
+        display: none;
+    }
+
+    .slid_menu img {
+        width: 60px;
+    }
+
+    .navbar .logo-Valois {
+        height: 45px;
+    }
+
+    .navbar {
+        padding: 20px 10px;
+    }
+
+    .banner{
+        height: 100%;
+    }
+
+    .banner .outils {
+        height: 100%;
+        padding: 0px 70px 0px ;
+    }
+
+    .outils .block{
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .outils .block h2{
+        font-size: 23px;
+    }
+
+    .banner .renseigner {
+        padding: 76px 70px;
+    }
+
+    .histoir {
+        padding-top: 30px;
+        height: 100%;
+    }
+
+    .histoir .story-items {
+        height: 100%;
+    }
+
+    .story-items .description1 {
+        display: flex;
+        margin: 30px 60px;
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
+    .story-items .button {
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+
+    .title .titrate h2{
+        font-size: 35px;
+    }
+
+    .revolution .picture{
+        display: none;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .clean {
+        margin-bottom: 60px;
+    }
+
+    .clean .rapport {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .clean .reverse {
+        margin-top: 0px;
+    }
+
+    .rapport .revolution {
+        width: 100%;
+        transform: translate(0px, 0px);
+    }
+
+    .temoinnage {
+        padding: 20px 0px;
+    }
+
+    .opinion {
+        margin: 25px 0px;
+    }
+
+    footer{
+        height: 100%;
+    }
+
+    footer .pages:nth-child(1) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(2) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(3) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(4) {
+        width: 50%;
+    }
+
+    footer .pages .reacceuil {
+        width: 25%;
+        height: 60%;
+        left: 230px;
+        top: -60px;
+    }
+
+
+    .reacceuil a img {
+        top: 20px;
+        left: 30px;
+        height: 35px;
+    }
+
+    .temoinnage .opinion {
+        width: 100%;
+    }
+
+
+    .outils .block .imgs {
+        margin-bottom: 10px;
+        height: 30px;
+    }
+
+    .outils .block .imgs1 {
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 780px) {
+
+
+    .description {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .icon-serveur .serveur{
+        display: none;
+    }
+
+    .slid_menu img {
+        width: 60px;
+    }
+
+    .navbar .logo-Valois {
+        height: 45px;
+    }
+
+    .navbar {
+        padding: 20px 10px;
+    }
+
+    .banner{
+        height: 100%;
+    }
+
+    .banner .outils {
+        height: 100%;
+        margin: 0px;
+    }
+
+    .outils .block{
+        width: 49%;
+        font-size: 13px;
+    }
+
+    .banner .renseigner {
+        padding-top: 70px;
+    }
+
+    .histoir {
+        padding-top: 30px;
+        height: 100%;
+    }
+
+    .histoir .story-items {
+        height: 100%;
+    }
+
+    .story-items .description1 {
+        display: flex;
+        margin: 30px 60px;
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
+    .story-items .button {
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+
+    .title .titrate h2{
+        font-size: 35px;
+    }
+
+    .revolution .picture{
+        display: none;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .clean {
+        margin-bottom: 60px;
+    }
+
+    .clean .rapport {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .clean .reverse {
+        margin-top: 0px;
+    }
+
+    .rapport .revolution {
+        width: 100%;
+        transform: translate(0px, 0px);
+    }
+
+    .temoinnage {
+        padding: 20px 0px;
+    }
+
+    .opinion {
+        margin: 25px 0px;
+    }
+
+    footer{
+        height: 100%;
+    }
+
+    footer .pages:nth-child(1) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(2) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(3) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(4) {
+        width: 50%;
+    }
+
+    footer .pages .reacceuil {
+        width: 25%;
+        height: 60%;
+        left: 230px;
+        top: -65px;
+    }
+
+
+    .reacceuil a img {
+        top: 20px;
+        left: 30px;
+        height: 35px;
+    }
+
+    .temoinnage .opinion {
+        width: 100%;
+    }
+
+    .outils .block .imgs {
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs1 {
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs2 {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+/******************* TABLETTE LANDSCAPE *******************/
+
+@media screen and (min-width: 800px) and (max-width: 990px){
+
+
+    .description {
+        display: none;
+    }
+
+    .navbar .logo-Valois {
+        height: 35px;
+        margin-left: 10px;
+    }
+
+    .navbar .menu {
+        display: flex;
+    }
+
+    .navbar .menu li {
+        margin: 15px;
+        list-style: none;
+    }
+
+    .navbar .menu li a {
+        font-size: 10px;
+    }
+
+    .banner .renseigner .big-title {
+        font-size: 2em;
+    }
+
+    .banner .renseigner .p-after {
+        font-size: 20px;
+    }
+
+    .outils .block {
+        width: 30%;
+        padding: 30px;
+    }
+
+    .outils .block h2 {
+        font-size: 20px;
+    }
+
+    .outils .block p {
+        font-size: 13px;
+        overflow: hidden;
+        height: 140px;
+    }
+
+    .outils .block .imgs {
+        width: 90px;
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs1 {
+        width: 44px;
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs2 {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+
+    .block .links {
+        font-size: 15px;
+    }
+
+    .banner {
+        height: 790px;
+    }
+
+    .story-items h2 {
+        font-size: 30px;
+    }
+
+    .story-items p {
+        font-size: 15px;
+    }
+
+    .story-items .description1 {
+        font-size: 15px;
+        text-align: center;
+        display: block;
+        margin: 20px 20px;
+    }
+
+    .renseigner .button {
+        font-size: 13px;
+        width: 180px;
+        height: 35px;
+    }
+
+    .story-items .button .click {
+        font-size: 16px;
+        width: 210px;
+        height: 55px;
+    }
+
+    .story-items .button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .story-items .button .click {
+        width: 33%;
+    }
+
+    .histoir {
+        height: 730px;
+    }
+
+    .acceuil .proof {
+        font-size: 15px;
+    }
+
+
+    .clean .reverse {
+        margin-top: 0px;
+    }
+
+    .rapport .revolution {
+        font-size: 14px;
+        width: 40%;
+        transform: translate(70px, 110px);
+    }
+
+    .rapport .picture {
+        transform: translate(0px , 0px);
+    }
+
+    .reverse .picture {
+        transform: translate(154px , 0px);
+    }
+
+    .reverse .revolution {
+        transform: translate(-80px, 130px);
+    }
+
+    .navbar .slid_menu{
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .navbar .icon-serveur {
+        display: none;
+    }
+
+    .serveur:nth-child(2){
+        width: 35px;
+    }
+
+    .serveur:nth-child(3){
+        width: 35px;
+    }
+
+    .temoinnage .opinion {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .opinion .profil img {
+        height: 190px;
+    }
+
+    .temoinnage .opinion {
+        font-size: 15px;
+    }
+
+    .temoinnage .barre img {
+        width: 115px;
+    }
+
+    footer .pages {
+        width: 30%;
+        font-size: 13px;
+    }
+
+    footer .pages:nth-child(3) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(2) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(1) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(4) {
+        width: 50%;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .pages .icons-serveur .icons {
+        height: 50px;
+    }
+
+    .pages .icons-serveur .iconS {
+        height: 37px;
+    }
+
+    footer .pages .reacceuil {
+        height: 70%;
+        top: -70px;
+        left: 217px;
+        width: 24%;
+    }
+
+    .clean {
+         margin-bottom: 200px;
+    }
+
+    .histoir {
+         height: 100%;
+        padding-top: 80px;
+    }
+
+    .histoir .story-items{
+        height: 100%;
+    }
+
+
+
+}
+
+@media screen and (min-width: 990px) and (max-width: 1024px) {
+    .description {
+        display: none;
+    }
+
+    .navbar .logo-Valois {
+        height: 50px;
+        margin-left: 15px;
+    }
+
+    .navbar .menu {
+        display: flex;
+    }
+
+    .navbar .menu li {
+        margin: 15px;
+        list-style: none;
+    }
+
+    .navbar .menu li a {
+        font-size: 13px;
+    }
+
+    .banner .renseigner .big-title {
+        font-size: 2em;
+    }
+
+    .banner .renseigner .p-after {
+        font-size: 20px;
+    }
+
+    .outils .block {
+        width: 30%;
+        padding: 30px;
+    }
+
+    .outils .block h2 {
+        font-size: 20px;
+    }
+
+    .outils .block p {
+        font-size: 13px;
+        overflow: hidden;
+        height: 140px;
+    }
+
+    .outils .block .imgs {
+        width: 90px;
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs1 {
+        width: 44px;
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs2 {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+
+    .block .links {
+        font-size: 15px;
+    }
+
+    .banner {
+        height: 790px;
+    }
+
+    .story-items h2 {
+        font-size: 30px;
+    }
+
+    .story-items p {
+        font-size: 15px;
+    }
+
+    .story-items .description1 {
+        font-size: 15px;
+        text-align: center;
+        display: block;
+        margin: 20px 20px;
+    }
+
+    .renseigner .button {
+        font-size: 13px;
+        width: 180px;
+        height: 35px;
+    }
+
+    .story-items .button .click {
+        font-size: 16px;
+        width: 210px;
+        height: 55px;
+    }
+
+    .story-items .button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .story-items .button .click {
+        width: 33%;
+    }
+
+    .histoir {
+        height: 730px;
+    }
+
+    .acceuil .proof {
+        font-size: 15px;
+    }
+
+
+    .clean .reverse {
+        margin-top: 0px;
+    }
+
+    .rapport .revolution {
+        font-size: 14px;
+        width: 40%;
+        transform: translate(70px, 110px);
+    }
+
+    .rapport .picture {
+        transform: translate(0px , 0px);
+    }
+
+    .reverse .revolution {
+        transform: translate(-80px, 130px);
+    }
+
+    .reverse .picture img {
+        transform: translate(210px, -87px);
+    }
+
+    .navbar .slid_menu{
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .navbar .icon-serveur {
+        display: none;
+    }
+
+    .serveur:nth-child(2){
+        width: 35px;
+    }
+
+    .serveur:nth-child(3){
+        width: 35px;
+    }
+
+    .temoinnage .opinion {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .opinion .profil img {
+        height: 190px;
+    }
+
+    .temoinnage .opinion {
+        font-size: 15px;
+    }
+
+    .temoinnage .barre img {
+        width: 115px;
+    }
+
+    footer .pages {
+        width: 30%;
+        font-size: 13px;
+    }
+
+    footer .pages:nth-child(3) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(2) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(1) {
+        width: 50%;
+    }
+
+    footer .pages:nth-child(4) {
+        width: 50%;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .pages .icons-serveur .icons {
+        height: 50px;
+    }
+
+    .pages .icons-serveur .iconS {
+        height: 37px;
+    }
+
+    footer .pages .reacceuil {
+        height: 70%;
+        top: -70px;
+        left: 380px;
+        width: 18%;
+    }
+
+    .clean {
+        margin-bottom: 200px;
+    }
+
+    .histoir {
+        height: 100%;
+        padding-top: 80px;
+    }
+
+    .histoir .story-items{
+        height: 100%;
+    }
+}
+
+/*************** LAPTOP ******************/
+
+@media screen and (min-width: 1024px) and (max-width: 1600px){
+
+    .slid_menu img {
+        display: none;
+    }
+
+    .description .contact:nth-child(2){
+        background: #febf32;
+    }
+
+    .navbar{
+        padding: 10px 15px;
+    }
+
+    .navbar .logo-Valois {
+        height: 100%;
+    }
+
+    .navbar .menu {
+        display: flex;
+    }
+
+    .navbar .icon-serveur {
+        display: flex;
+    }
+
+    .renseigner .big-title {
+         font-size: calc(1.375rem + 1.5vw);
+    }
+
+    .renseigner .p-after {
+        font-size: 20px;
+    }
+
+    .outils .block {
+        width: 30%;
+    }
+
+    .outils .block .imgs{
+        width: 85px;
+        margin-bottom: 10px;
+    }
+
+    .outils .block .imgs1{
+        width: 85px;
+        margin-bottom: 10px;
+    }
+
+    .outils .block p {
+        font-size: 15px;
+    }
+
+    .block .links {
+        font-size: 20px;
+    }
+
+    .banner {
+        height: 790px;
+    }
+
+    .temoinnage .opinion {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .service{
+        margin: 0px 40px;
+    }
+
+    .service .container{
+        max-width: 1320px ;
+    }
+
+    .work img {
+        height: 100%;
+    }
+
+    .reverse .picture{
+        transform: translate(0px , 0px);
+    }
+
+    .rapport .picture{
+        transform: translate(0px , 0px);
+    }
+
+    .reverse .picture img {
+        transform: translate(270px, -87px);
+    }
+
+
+    footer .pages {
+        width: 26%;
+        font-size: 16px;
+    }
+
+    footer .pages:nth-child(2) {
+        width: 18%;
+    }
+
+    footer .pages:nth-child(4) {
+        width: 30%;
+    }
+
+    footer .pages .reacceuil {
+        height: 40%;
+        top: 0px;
+        left: 170px;
+        width: 30%;
+    }
+
+    .reacceuil a img {
+        left: 35px;
+        top: 30px;
+    }
+
+    footer {
+        height: 330px;
+    }
+
+    .serveur:nth-child(3) {
+        width: 37px;
+    }
+
+    .histoir{
+        padding-top: 145px;
+    }
+
+    .story-items .button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .clean .reverse {
+         margin-top: 0px;
+    }
+
+    .service .clean{
+        padding-top: 60px;
+    }
+
+}
+
+
