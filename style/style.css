@@ -785,10 +785,10 @@ footer .pages .reacceuil:hover {
 }
 
 
-@media {
+/* @media {
 
     .list_slid {
-        /*height: 30px;*/
+        /*height: 30px;*
     }
 
     .offcanvas-header .btn-close {
@@ -1113,9 +1113,9 @@ footer .pages .reacceuil:hover {
     .outils .block .imgs2 {
         margin-bottom: 15px;
     }
-}
+}*/
 
-/****************** TABLETTE ************/
+/****************** TABLETTE ************
 
 @media screen and (max-width: 560px) and (min-width: 480px) {
 
@@ -1729,9 +1729,9 @@ footer .pages .reacceuil:hover {
     }
 
 
-}
+}*/
 
-/******************* TABLETTE LANDSCAPE *******************/
+/******************* TABLETTE LANDSCAPE *******************
 
 @media screen and (min-width: 800px) and (max-width: 990px){
 
@@ -2192,9 +2192,9 @@ footer .pages .reacceuil:hover {
     .histoir .story-items{
         height: 100%;
     }
-}
+}*/
 
-/*************** LAPTOP ******************/
+/*************** LAPTOP ******************
 
 @media screen and (min-width: 1024px) and (max-width: 1600px){
 
@@ -2336,6 +2336,6 @@ footer .pages .reacceuil:hover {
         padding-top: 60px;
     }
 
-}
+} */
 
 
