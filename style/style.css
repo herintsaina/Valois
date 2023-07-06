@@ -614,7 +614,7 @@ footer .pages .reacceuil:hover {
         padding-bottom: 35px;
     }
 
-    .container{
+    .banner .container{
         max-width: 100%;
     }
 
@@ -724,6 +724,8 @@ footer .pages .reacceuil:hover {
     .button .click button {
         width: 100%;
         margin-left: 0px !important;
+        height: 120px;
+        font-size: 50px;
     }
 
     .button .click {
@@ -734,23 +736,13 @@ footer .pages .reacceuil:hover {
         height: 100%;
     }
 
-    .service .title .titrate {
-        margin: 25px 0px;
-    }
-
-    .acceuil .proof {
-        font-size: 13px;
-    }
+    
 
     .rapport .picture {
         display: none;
     }
 
-    .rapport .revolution {
-        transform: translate(0px, 0px);
-        width: 100%;
-    }
-
+    
     .work {
         width: 100%;
     }
@@ -763,10 +755,7 @@ footer .pages .reacceuil:hover {
         margin-top: 0px;
     }
 
-    .clean .rapport {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+    
 
     .opinion {
         flex-direction: column;
@@ -774,10 +763,6 @@ footer .pages .reacceuil:hover {
 
     .opinion .expression {
         width: 100%;
-    }
-
-    .temoinnage {
-        padding: 0px;
     }
 
     .temoinnage .select {
@@ -829,4 +814,57 @@ footer .pages .reacceuil:hover {
     .outils .block .imgs2 {
         margin-bottom: 10px;
     }
+
+    /*************** service ****************/
+
+    .service .container{
+        max-width: 100%;
+    }
+
+    .acceuil .proof {
+        font-size: 48px;
+    }
+
+    .orange img{
+        height: 40px;
+    }
+
+    .service .title .titrate {
+        margin: 60px 0px;
+    }
+
+    .titrate h2{
+        font-size: 100px;
+    }
+
+    .rapport .revolution {
+        transform: translate(0px, 0px);
+        width: 100%;
+    }
+
+    .clean .rapport {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .revolution h3 {
+        font-size: 70px;
+    }
+
+    .revolution p{
+        font-size: 48px;
+        margin-top: 15px;
+    }
+
+    .revolution ul{
+        font-size: 50px;
+    }
+
+    /************ .temoinnage *****************/
+
+    .temoinnage {
+        padding: 0px;
+        padding-top: 50px;
+    }
+
 }
