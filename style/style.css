@@ -90,7 +90,8 @@ header {
 }
 
 .navbar {
-
+    max-width: 98%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -607,7 +608,7 @@ footer .pages .reacceuil:hover {
 
 /***************** MOBILE ********************/
 
-@media screen and (min-width: 320px) {
+@media (min-width: 320px) {
 
     header .navbar {
         padding-top: 35px;
@@ -678,7 +679,7 @@ footer .pages .reacceuil:hover {
 
     .outils .block {
         width: 100%;
-        /* height: 410px; */
+        height: auto;
     }
 
     .block h2 {
@@ -867,4 +868,100 @@ footer .pages .reacceuil:hover {
         padding-top: 50px;
     }
 
+}
+
+@media (min-width:1366px) {
+
+    /* header */
+
+    .navbar .logo-Valois {
+        height: 60px;
+    }
+
+    header .navbar {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar .menu {
+        display: flex;
+    }
+
+    .shadow-none{
+        display: none;
+    }
+
+    .navbar .icon-serveur {
+        display: flex;
+    }
+
+    .description {
+        display: flex;
+    }
+
+    /******** Banner *************/
+
+    .big-title {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+
+    .p-after {
+        font-size: var(--bs-body-font-size);
+        margin-top: 1rem;
+    }
+
+    .renseigner button {
+        width: auto;
+        height: auto;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+
+    .banner .renseigner {
+        padding-top: 130px;
+    }
+
+    .outils .block{
+        width: 30%;
+    }
+
+    .outils .block img {
+        max-width: 120px;
+        width: auto;
+    }
+
+    .block h2 {
+        font-size: calc(1.325rem + .9vw);
+    }
+
+    .outils .block p {
+        font-size: var(--bs-body-font-size); 
+        height: 100px;
+    }
+
+    .block .links {
+        font-size: var(--bs-body-font-size);    
+    }
+
+    .banner .outils{
+        height: 300px;
+        max-width: 95%;
+        margin: auto;
+    }
+
+    /* histoir */
+
+    .histoir {
+        padding-top: 280px;
+    }
+
+    .story-items h2 {
+        font-size: calc(1.325rem + .9vw);
+    }
+
+    .story-items p {
+        font-size: var(--bs-body-font-size);
+        max-width: 90%;
+    }
+    
 }
