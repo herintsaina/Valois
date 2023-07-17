@@ -313,8 +313,8 @@ header {
 
 .story-items .description1 {
     display: flex;
-    justify-content: space-around;
-    margin: 30px 210px;
+    justify-content: center;
+    gap: 25px;
 }
 
 .description1 .contact{
@@ -767,7 +767,7 @@ footer .pages .reacceuil:hover {
     }
 
     .temoinnage .select {
-        margin-bottom: 15px;
+        margin-bottom: 60px;
     }
 
     footer {
@@ -868,6 +868,260 @@ footer .pages .reacceuil:hover {
         padding-top: 50px;
     }
 
+
+    .opinion .profil img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .col-md-6.opinion{
+        width: 100%;
+    }
+
+    .opinion .expression{
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .opinion .expression img{
+        height: 90px;
+    }
+
+    .temoinnage .select button {
+        width: 100%;
+        margin-left: 0px !important;
+        height: 120px;
+        font-size: 50px;
+    }
+
+    /****** Footer ***************/
+
+    footer .pages img {
+        width: 100%;
+    }
+
+    footer .pages .logo-footer {
+        width: 30%;
+    }
+
+    .list-unstyled{
+        font-size: 50px;
+    }
+
+    footer .pages h6{
+        font-size: 50px;
+    }
+
+    .pages .icons-serveur .icons{
+        width: 30%;
+        height: 100%;
+    }
+
+    .pages .icons-serveur .iconS{
+        width: 30%;
+        height: 95%;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    /* header */
+
+    .navbar .logo-Valois {
+        height: 60px;
+    }
+
+    header .navbar {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar .menu {
+        display: flex;
+    }
+
+    .shadow-none{
+        display: none;
+    }
+
+    .navbar .menu li{
+        margin: 16px;
+    }
+
+    
+
+    .description {
+        display: flex;
+    }
+
+    /******** Banner *************/
+
+    .big-title {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+
+    .p-after {
+        font-size: var(--bs-body-font-size);
+        margin-top: 1rem;
+    }
+
+    .renseigner button {
+        width: auto;
+        height: auto;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+
+    .banner .renseigner {
+        padding-top: 130px;
+    }
+
+    .outils .block{
+        width: 30%;
+    }
+
+    .outils .block img {
+        max-width: 120px;
+        width: auto;
+    }
+
+    .block h2 {
+        font-size: calc(1.325rem + .9vw);
+    }
+
+    .outils .block p {
+        font-size: var(--bs-body-font-size); 
+        height: 100px;
+    }
+
+    .block .links {
+        font-size: var(--bs-body-font-size);    
+    }
+
+    .banner .outils{
+        height: 300px;
+        max-width: 95%;
+        margin: auto;
+    }
+
+    /* histoir */
+
+    .histoir {
+        padding-top: 280px;
+    }
+
+    .story-items h2 {
+        font-size: calc(1.325rem + .9vw);
+    }
+
+    .story-items p {
+        font-size: var(--bs-body-font-size);
+        max-width: 90%;
+    }
+
+    .story-items .description1{
+        display: flex;
+
+    }
+
+    .description1 .contact{
+        font-size: var(--bs-body-font-size);
+    }
+
+    .button .click button{
+        width: auto;
+        font-size: inherit;
+        height: auto;
+    }
+
+    .button{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /**** service ********/
+
+    .orange img{
+        height: auto;
+    }
+
+    .acceuil .proof{
+        font-size: var(--bs-body-font-size);
+    }
+
+    .titrate h2{
+        font-size: calc(1.325rem + .9vw);
+    }
+
+    .service .title .titrate{
+        margin: 40px;
+    }
+
+    .work{
+        width: 80%;
+    }
+
+    .revolution h3{
+        font-size: calc(1.3rem + .6vw);
+    }
+
+    .revolution p{
+        font-size: 13px;
+    }
+    
+    .revolution ul{
+        font-size: 13px;
+    }
+
+    .rapport .revolution{
+        width: 40%;
+        transform: translate(80px, 170px);
+    }
+
+    .clean .rapport{
+        flex-direction: inherit;
+    }
+
+    .clean .reverse{
+        flex-direction: row-reverse;
+    }
+
+    .clean{
+        margin-bottom: 200px;
+    }
+
+    .reverse .revolution {
+        transform: translate(-80px, 170px);
+    }
+
+    /**** COnfiance ***/
+
+    .opinion .profil img{
+        height: 200px;
+    }
+
+    /***** Footer ****/
+
+    footer .pages:nth-child(1){
+        width: 25%;
+    }
+
+    footer .pages:nth-child(2){
+        width: 25%;
+    }
+
+    footer .pages:nth-child(3){
+        width: 25%;
+    }
+
+    footer .pages:nth-child(4){
+        width: 25%;
+    }
+    
+    
 }
 
 @media (min-width:1366px) {
@@ -962,6 +1216,28 @@ footer .pages .reacceuil:hover {
     .story-items p {
         font-size: var(--bs-body-font-size);
         max-width: 90%;
+    }
+
+    .story-items .description1{
+        display: flex;
+
+    }
+
+    .description1 .contact{
+        font-size: var(--bs-body-font-size);
+    }
+
+    .button .click button{
+        width: auto;
+        font-size: inherit;
+        height: auto;
+    }
+
+    .button{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
 }
