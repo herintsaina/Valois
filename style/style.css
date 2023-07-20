@@ -943,6 +943,8 @@ footer .pages .reacceuil:hover {
 
 }
 
+/********* Tablette ************/
+
 @media (min-width:768px) {
     /**** header ***/
 
@@ -1099,6 +1101,42 @@ footer .pages .reacceuil:hover {
         font-size: 40px;
     }
 }
+
+@media (min-width:1000px) {
+    /**** temoinage ******/
+
+    .col-md-6.opinion {
+        width: 70%;
+    }
+
+    footer .pages .reacceuil{
+        right: 0px;
+    }
+
+    footer .pages:nth-child(1) {
+        width: 80%;
+    }
+
+    footer .pages:nth-child(2) {
+        width: 80%;
+    }
+
+    footer .pages:nth-child(3) {
+        width: 80%;
+    }
+
+    footer .pages:nth-child(4) {
+        width: 80%;
+    }
+
+    .row.pied-page {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+/******* desktop portable **********/
 
 @media (min-width:1024px) {
 
@@ -1297,6 +1335,7 @@ footer .pages .reacceuil:hover {
         position: relative;
         bottom: -45px;
         right: -155px;
+        width: 30%;
     }
 
 
@@ -1324,6 +1363,13 @@ footer .pages .reacceuil:hover {
 
     .col-md-6.opinion{
         width: 50%;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .temoinnage .select{
+        margin-top: 50px;
     }
 
     .opinion .profil img{
