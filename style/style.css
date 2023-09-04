@@ -1102,6 +1102,15 @@ footer .pages .reacceuil:hover {
     }
 }
 
+@media (min-width:900px) {
+    .navbar .logo-Valois {
+        height: 85px;
+    }
+    .slid_menu img {
+        width: 75px;
+    }
+}
+
 @media (min-width:1000px) {
     /**** temoinage ******/
 
